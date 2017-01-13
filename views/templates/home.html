@@ -1,0 +1,28 @@
+<section class="row">
+    <div class="col s12" input-field>
+        <input type="text" ng-model="shopCtrl.value">
+        <label class="align-center">Search for furniture</label>
+    </div>
+</section>
+<section class="row">
+    <div class="col s6">
+        <div id="furniture" class="card medium">
+            <h4 class="center white-text"><a ng-href="/showItem/{{shopCtrl.name}}">Furniture</a></h4>
+        </div>
+    </div>
+    <div class="col s6">
+        <div id="clothes" class="card hoverable medium">
+            <h4 class="center white-text">Clothing</h4>
+        </div>
+    </div>
+    <div class="col s6">
+        <div id="cars" class="card hoverable medium">
+            <h4 class="center"><a ng-href="#" class="white-text">Cars</a></h4>
+        </div>
+    </div>
+    <div class="col s6">
+        <div id="electronics" class="card hoverable medium">
+            <h4 class="center white-text">Electronics</h4>
+        </div>
+    </div>
+</section>

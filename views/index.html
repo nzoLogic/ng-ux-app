@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html ng-app="shopApp">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- JavaScript for: jQuery, angular, materialize, and angular-materialize. All of which are needed. -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
     <script src="scripts/app.js"></script>
-  </head>
-  <body>
-    <h1>online</h1>
-  </body>
+    <script src="scripts/controllers/shopController.js"></script>
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="container">
+    <header>
+      <h3 class="center">Aarons List</h3>
+    </header>
+    <main ng-view class="section">
+    </main>
+</body>
+
 </html>

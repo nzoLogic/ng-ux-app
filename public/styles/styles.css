@@ -1,0 +1,20 @@
+body {
+  background-color: #666;
+}
+#furniture {
+  background-image: url('../images/furniture.jpg');
+  background-size: cover;
+}
+#clothes {
+  background-image: url('../images/clothes.jpg');
+  background-size: cover;
+}
+#cars {
+  background-image: url('../images/cars.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#electronics {
+  background-image: url('../images/electronics.jpg');
+  background-size: cover;
+}
