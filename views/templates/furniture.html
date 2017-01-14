@@ -1,7 +1,26 @@
-<section class="row">
-  <div class="col m4">
-    <div class="card medium">
-      <p>card</p>
+
+<section class="row" ng-repeat="item in furnitureCtrl.furnitureCollection">
+    <div class="col m7 offset-m3">
+        <div id="{{item.id}}" class="card medium">
+            <!-- <div class="card">
+             <p>I am a very simple card. I am good at containing small bits of information.
+               I am convenient because I require little markup to use effectively.</p>
+             </div> -->
+            <div class="card-action">
+                <span>{{item.date}}</span><span class="align-center"> {{item.title}}</span>
+                <a class="{{item.deliverable}}">Deliverable</a>
+            </div>
+        </div>
     </div>
-  </div>
+</section>
+<section class="row">
+    <ul class="pagination col m4 offset-m5">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
 </section>

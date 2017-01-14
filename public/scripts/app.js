@@ -7,18 +7,18 @@ config.$inject = ['$routeProvider', '$locationProvider'];
 function config($routeProvider, $locationProvider) {
     console.log('aaaay')
     $routeProvider.when('/', {
-      templateUrl: '/templates/home',
-      controllerAs: 'shopCtrl',
-      controller: 'shopController'
-    })
-    .when('/showItem', {
-      templateUrl: '/templates/showItem',
-      controllerAs: 'shopCtrl',
-      controller: 'shopController'
-    })
+            templateUrl: '/templates/home',
+            controllerAs: 'shopCtrl',
+            controller: 'shopController'
+        })
+        .when('/showItem', {
+            templateUrl: '/templates/furniture',
+            controllerAs: 'furnitureCtrl',
+            controller: 'furnitureController'
+        })
 
     $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
+        enabled: true,
+        requireBase: false
     })
 }

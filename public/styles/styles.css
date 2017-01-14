@@ -1,6 +1,9 @@
 body {
   background-color: #666;
 }
+/*img {
+  min-width: 100% !important;
+}*/
 #furniture {
   background-image: url('../images/furniture.jpg');
   background-size: cover;
@@ -17,4 +20,19 @@ body {
 #electronics {
   background-image: url('../images/electronics.jpg');
   background-size: cover;
+}
+#item1 {
+  background-image: url('../images/furniture/west-elm-couch.jpg');
+  background-size: cover;
+}
+#item2 {
+  background-image: url('../images/furniture/chair.jpg');
+  background-size: cover;
+}
+#item3 {
+  background-image: url('../images/electronics.jpg');
+  background-size: cover;
+}
+p {
+  background-color: #fff;
 }

@@ -11,7 +11,6 @@ app.get('/', function(req, res){
 //get path for templates
 app.get('/templates/:name', function(req, res){
   var name = req.params.name;
-  console.log('requested', name)
   res.sendFile(__dirname  + '/views/templates/' + name + '.html');
 })
 app.listen(3000, function(){
